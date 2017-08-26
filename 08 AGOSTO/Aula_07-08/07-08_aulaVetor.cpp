@@ -4,6 +4,7 @@
 #include <locale.h>
 
 int main(){
+	//Verificar se um vetor está contido dentro de um outro vetor
 	setlocale(LC_ALL, "Portuguese");
 	
 	int vetor1[100], valor, valoresVetor1 = 0, vetor2[100], valoresVetor2 = 0;
