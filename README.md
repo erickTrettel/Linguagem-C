@@ -1,3 +1,2 @@
 # Linguagem C
-Trabalhando com linguagem C.
-FATEC Itu - Aula de linguagem de programação
+FATEC Itu - Aula de linguagem de programação. Trabalhando com linguagem C
