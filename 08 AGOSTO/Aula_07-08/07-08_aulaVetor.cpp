@@ -90,6 +90,7 @@ int main(){
 		printf("\nNão\n");
 	}
 	
+	//Fim do programa
 	system("PAUSE");
 	return 0;
 }
