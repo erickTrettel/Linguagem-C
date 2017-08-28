@@ -7,8 +7,9 @@
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	
-	int pesoContainer, funcaoLogica = 1, setor[4], contContainer[4], contador = 0, maior = 0, menor = 250, boleana[4];
+	int funcaoLogica = 1, contContainer[4], contador = 0, maior = 0, menor = 250, boleana[4];
 	char respostaUsuario[2], ref[2] = "s";
+	float pesoContainer, setor[4];
 	
 	//Inserir o valor 0 no vetor
 	for(int i = 0; i<4; i++){
@@ -21,7 +22,7 @@ int main(){
 	
 	do{		
 		printf("Digite o peso do contâiner: ");
-		scanf("%d", &pesoContainer);
+		scanf("%f", &pesoContainer);
 		
 		//Verifica o maior peso entre os setores
 		for(int i = 0; i<4; i++){
@@ -67,7 +68,7 @@ int main(){
 				contContainer[contador]++;
 				printf("\n*O contâiner foi armazenado no setor %d", contador+1);
 				printf("\n*O setor contém %d contâiners", contContainer[contador]);
-				printf("\n*Peso total do setor: %d", setor[contador]);
+				printf("\n*Peso total do setor: %.2f", setor[contador]);
 				contador++;	
 			}else{								
 				for(int i = 0; i<4; i++){
@@ -83,7 +84,7 @@ int main(){
 						}
 						printf("\n*O contâiner foi armazenado no setor %d", i+1);
 						printf("\n*O setor %d contém %d contâiners", i+1, contContainer[i]);
-						printf("\n*Peso total do setor %d: %d", i+1, setor[i]);
+						printf("\n*Peso total do setor %d: %.2f", i+1, setor[i]);
 						break;
 					}else{
 						
@@ -118,10 +119,10 @@ int main(){
 	}
 	
 	printf("\n---------- ESTATÍSTICAS ----------");
-	printf("\n\nPesos - \nSETOR 1: %d toneladas --> %d contâiners", setor[0], contContainer[0]);
-	printf("\nSETOR 2: %d toneladas --> %d contâiners", setor[1], contContainer[1]);
-	printf("\nSETOR 3: %d toneladas --> %d contâiners", setor[2], contContainer[2]);
-	printf("\nSETOR 4: %d toneladas --> %d contâiners", setor[3], contContainer[3]);
+	printf("\n\nPesos - \nSETOR 1: %.2f toneladas --> %d contâiners", setor[0], contContainer[0]);
+	printf("\nSETOR 2: %.2f toneladas --> %d contâiners", setor[1], contContainer[1]);
+	printf("\nSETOR 3: %.2f toneladas --> %d contâiners", setor[2], contContainer[2]);
+	printf("\nSETOR 4: %.2f toneladas --> %d contâiners", setor[3], contContainer[3]);
 	printf("\n\n---------- FIM DE CARREGAMENTO ----------");
 	
 	for(int i = 0; i<10; i++){
