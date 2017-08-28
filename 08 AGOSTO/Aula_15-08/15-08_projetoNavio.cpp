@@ -129,6 +129,7 @@ int main(){
 		putchar('\n');
 	}
 	
+	//Fim do programa
 	system("PAUSE");
 	return 0;
 }
