@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#define LINHAS 3
+#define LINHAS 20
 #define COLUNAS 1012
 
 void exibirMatriz(int saquesMensais[LINHAS][COLUNAS]);
@@ -29,10 +29,10 @@ void digitarValores(int saquesMensais[LINHAS][COLUNAS]){
 	}
 	
 	for(int i=0;i<LINHAS; i++){
-		printf("FILIAL %d:\n", i+1);
-		printf("	MES %d -\n", contagemMeses+1);
+		//printf("FILIAL %d:\n", i+1);
+		//printf("	MES %d -\n", contagemMeses+1);
 		for(int j=0; j<COLUNAS; j++){			
-			printf("	Valor do saque: ");
+			//printf("	Valor do saque: ");
 			scanf("%d", &valor);
 			
 			if(valor == -1)
@@ -49,7 +49,7 @@ void digitarValores(int saquesMensais[LINHAS][COLUNAS]){
 						quantidadeSaques[contagemMeses]++;	
 					}
 				}else if(valor == -1){
-					printf("\n	MÊS %d -\n", contagemMeses+1);
+					//printf("\n	MÊS %d -\n", contagemMeses+1);
 					saquesMensais[i][j] = valor;
 				}else
 					printf("********Valor digitado inválido\n");	
@@ -60,7 +60,7 @@ void digitarValores(int saquesMensais[LINHAS][COLUNAS]){
 		}
 	}
 	
-	printf("\nDigite o mês: ");
+	printf("\nMês: ");
 	scanf("%d", &mes);
 	if(mes > 5)
 		printf("\nValor inválido\n");
