@@ -107,7 +107,7 @@ Contato * abrirArquivo (int *n, int *cap){
   else{ //Arquivo encontrado, logo procedemos com a leitura.
 
     //Le o numero de registros.
-    fread(n, sizeof(int), 1, fp);
+  	fread(n, sizeof(int), 1, fp);
 
     //A capacidade deve ser maior ou igual a "n" (ex: n*2).
     *cap = (*n) * 2;
@@ -154,8 +154,8 @@ void apagaContato (Contato *agenda, int *n){
       gets(nome);
       for(i=0; i < *n; i++){
              if (strcmp(agenda[i].nome, nome)==0){
-             	for(j=i; j < *n; j++){
-                   agenda[j] = agenda[j+1];
+         		for(j=i; j < *n; j++){
+            	  agenda[j] = agenda[j+1];
                  }
                 (*n) --;
                 i  = *n;
