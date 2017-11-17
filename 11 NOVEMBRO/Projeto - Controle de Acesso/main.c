@@ -578,17 +578,17 @@ void Relatorio(Pessoa *registro, int numeroRegistros){
 	titulo = "Relatorio de convidados";
 	
 	fprintf(relatorio, "<html><head><title>%s</title></head><body><style>header{text-align: center; height: 100px; border: 1px solid #000} table, th, td{text-align: center; border: 1px solid #000; border-collapse: collapse} th{font-family: sans-serif; height: 30px; background: #f5f5f5} h1{font-family: sans-serif}</style>", titulo);
-	fprintf(relatorio, "<header><h1>RELATORIO DE CONVIDADOS %s</h1></header><center><table style='margin-top: 10px; width: 1080px;'><tr><th> * </th><th>NOME</th><th>CASA</th><th>RG</th><th>DATA</th></tr>", data);
+	fprintf(relatorio, "<header><h1>RELATORIO DE CONVIDADOS %s</h1></header><center><table style='margin-top: 10px; width: 1080px;'><tr><th> * </th><th>NOME</th><th>CASA</th><th>RG</th><th>DATA</th><th>HORA</th></tr>", data);
 
 	for(i=0; i<numeroRegistros; i++){
 		if(registro[i].tipo==2)
-			fprintf(relatorio, "<tr><td>%i</td><td>%s</td><td>%i</td><td>%i</td><td>%s</td></tr>", i, registro[i].nome, registro[i].casa, registro[i].rg,registro[i].data);
+			fprintf(relatorio, "<tr><td>%i</td><td>%s</td><td>%i</td><td>%i</td><td>%s</td><td>%s</td></tr>", i, registro[i].nome, registro[i].casa, registro[i].rg,registro[i].data, registro[i].hora);
 	}
 
 	fprintf(relatorio, "</table></center></body></html>");
 	fclose(relatorio);
 	
-	printf("Arquivo gerado na pasta raiz");
+	printf("Arquivo gerado na pasta raiz\n");
 	printf("\nPressione qualquer tecla para continuar...");
 	getch();
 	system("cls");
