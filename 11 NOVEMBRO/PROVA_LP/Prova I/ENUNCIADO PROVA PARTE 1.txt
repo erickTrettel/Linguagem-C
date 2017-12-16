@@ -1,0 +1,31 @@
+Defina uma estrutura em C que permita armazenar as informações dos livros de uma livraria. Um livro possui as seguintes informações:
+
+·         Título
+
+·         Autor
+
+·         Preço
+
+·         Editora
+
+·         Assunto
+
+·         Código
+
+Construa uma aplicação com as seguintes funções abaixo que manipulem no máximo 50 livros. Para isso definir um vetor de 50 posições para manipular os livros. NÃO USAR ALOCAÇÃO DINÂMICA DE MEMÓRIA.
+
+ 
+
+·         Função  que receba as informações de um livro. Não deixe repetir livros com um mesmo código. Se a capacidade máxima de 50 livros for atingida, mostre uma mensagem de erro.
+
+ 
+
+·         Função que lista todos os livros de um autor. Se o autor não existir, mostre uma mensagem de erro.
+
+ 
+
+·         Função que altera as informações de um livro. Essa deve receber o código do livro como parâmetro. Se o código do livro não existir, mostre uma mensagem de erro.
+
+ 
+
+·         Função que remove um livro cadastrado. Essa função deve receber o código do livro a ser removido como parâmetro. Se o código do livro não existir, mostre uma mensagem de erro.

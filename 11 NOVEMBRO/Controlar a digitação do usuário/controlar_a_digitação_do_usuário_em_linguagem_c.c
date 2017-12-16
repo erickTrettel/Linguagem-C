@@ -1,12 +1,4 @@
-/*
 
-  * Programa: Controlar a digitação (entradas) do usuário
-  * Data de criação: 13/10/2015
-  * Autor: Eric Cancellgliere (http://programacaoemfoco.com.br)
-  * Versão: 1.0
-  * Última modificação em [13/10/2015] feita por [Eric Cancellgliere]
-
-*/
 
 //bibliotecas
 #include <stdio.h>
